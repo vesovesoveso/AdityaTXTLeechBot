@@ -800,7 +800,7 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(str(e))
-    await m.reply_text("Done")
+    await m.reply_text("🚦Done🚦")
 
 
 @bot.on_message(filters.command(["pro_jw"]))
@@ -981,14 +981,14 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("🚦Done🚦")
 
 
 @bot.on_message(filters.command(["top"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**BHAG BHOSADI KE**", quote=True)
+        await m.reply("**BHAG ja bhai**", quote=True)
         return
     else:
         editable = await m.reply_text(
