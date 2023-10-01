@@ -58,9 +58,9 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [6004318404,1318247204,1511103739]
+auth_users = [1318247204,6004318404,1511103739,5986734743]
 sudo_users = auth_users
-sudo_groups = [-4089900112]
+sudo_groups = [-4029602118]
 
 shell_usage = f"**USAGE:** Executes terminal commands directly via bot.\n\n<pre>/shell pip install requests</pre>"
 def one(user_id):
@@ -119,7 +119,7 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command(["pyro"]))
+@bot.on_message(filters.command(["Aditya"]))
 async def account_login(bot: Client, m: Message):
 
  editable = await m.reply_text("**Hi Press**\n**Text** = /pro_txt\n**Top** = /pro_top\n**Vision** = /pro_vision\n**Jw** = /pro_jw\n**Olive** = /pro_olive\n**Addapdf** = /adda_pdf")
@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Text Downloader Bot made by ADITYA**. I can download videos from **text** file one by one.**\n\nDeveloper** : Aditya Verma*\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
+            "Hello Bhai **I am Text Downloader Bot made by ADITYA**. I can download videos from **text** file one by one.**\n\nDeveloper** : Aditya Verma*\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -401,8 +401,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name »** {name1} {res}🚦Aditya🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
-                cc1 = f"**Name »** ** {name1} {res}🚦Aditya🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -434,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                            f"**Name »** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
                         )
                         count += 1
                         # time.sleep(1)
@@ -992,7 +992,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am top Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bruh **I am top Downloader Bot made by Aditya**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -1086,7 +1086,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'    
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}.mp4\n**Caption »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Title »** {name1}🚦LPRPDV🚦.mp4\n**Caption »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
             
             cmd = f'yt-dlp -o "{name}.mp4" --cookies {cook} "{url}"'
             try:
