@@ -119,7 +119,7 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command(["Aditya"]))
+@bot.on_message(filters.command(["aditya"]))
 async def account_login(bot: Client, m: Message):
 
  editable = await m.reply_text("**Hi Press**\n**Text** = /pro_txt\n**Top** = /pro_top\n**Vision** = /pro_vision\n**Jw** = /pro_jw\n**Olive** = /pro_olive\n**Addapdf** = /adda_pdf")
@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bhai **I am Text Downloader Bot made by ADITYA**. I can download videos from **text** file one by one.**\n\nDeveloper** : Aditya Verma*\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
+            "Hello Bro **I am Text Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nDeveloper** : Lucky Rajput*\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -401,8 +401,9 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                 cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n**Download BY** :- {name1}'"
-                cc1 = f"**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
                 #                         ka=await helper.download(url,name)
@@ -433,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n**Download BY** :- {name1}'"
+                            f"**Name »** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
                         )
                         count += 1
                         # time.sleep(1)
@@ -470,7 +471,7 @@ async def account_login(bot: Client, m: Message):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**Suno Video nahi mikalunga**", quote=True)
+        await m.reply("**Nikal ja bhai**", quote=True)
         return
     else:
         editable = await m.reply_text(
@@ -524,7 +525,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}🚦LPRPDV🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
             if "youtu" in url:
                 cmd = f'yt-dlp -f best "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -553,11 +554,11 @@ async def account_login(bot: Client, m: Message):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("bhag ja varna gali dunga", quote=True)
+        await m.reply("bhag"ja bhai", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Vision IAS Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bro **I am Vision IAS Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -609,7 +610,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Name »** {name1}🚦LPRPDV🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "vision" or "youtu" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -638,11 +639,11 @@ async def account_login(bot: Client, m: Message):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**bhag ja nahi to gali sunega**", quote=True)
+        await m.reply("**bhag ja varna gali dunga**", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am adda pdf Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** :Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bro **I am adda pdf Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** :Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -696,7 +697,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)} {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}. {name1}.pdf\n'
+            cc = f'{str(count).zfill(3)}. {name1}🚦LPRPDV🚦.pdf\n'
             try:
                 getstatusoutput(
                     f'curl --http2 -X GET -H "Host:store.adda247.com" -H "user-agent:Mozilla/5.0 (Linux; Android 11; moto g(40) fusion Build/RRI31.Q1-42-51-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36" -H "accept:*/*" -H "x-requested-with:com.adda247.app" -H "sec-fetch-site:same-origin" -H "sec-fetch-mode:cors" -H "sec-fetch-dest:empty" -H "referer:https://store.adda247.com/build/pdf.worker.js" -H "accept-encoding:gzip, deflate" -H "accept-language:en-US,en;q=0.9" -H "cookie:cp_token={raw_text5}" "{url}" --output "{name}.pdf"'
@@ -720,11 +721,11 @@ async def account_login(bot: Client, m: Message):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("Man ja bhai", quote=True)
+        await m.reply("Nahi manega", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Oliveboard Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bro **I am Oliveboard Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -776,7 +777,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- Group Admin'
+            cc = f'**Name »** {name1}🚦LPRPDV🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "olive" or "youtu" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -799,18 +800,18 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(str(e))
-    await m.reply_text("🚦Done🚦")
+    await m.reply_text("Done")
 
 
 @bot.on_message(filters.command(["pro_jw"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**TUM NAHI SUDHREGA**", quote=True)
+        await m.reply("**TUM BHOSADI WALE NIKKAL LO**", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am jw Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** :Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bro **I am jw Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** :Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -921,7 +922,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title :-** {name1}🚦LPRPDV🚦.mkv\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Title »** {name1}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
@@ -980,18 +981,18 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🚦Done🚦")
+    await m.reply_text("Done")
 
 
 @bot.on_message(filters.command(["top"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**BHAG re**", quote=True)
+        await m.reply("**BHAG BHOSADI KE**", quote=True)
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am top Downloader Bot made by Aditya**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
+            "Hello Bro **I am top Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}"
        ,reply_markup=keyboard)
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
@@ -1058,7 +1059,7 @@ async def account_login(bot: Client, m: Message):
 
             # Show = f"**Downloading:-**\n\n**Name :-** ```{name}\nQuality - {raw_text2}```\n\n**Url :-** ```{url}```"
             # prog = await m.reply_text(Show)
-            # cc = f'>> **Name :** {name}\n>> **Title :** {raw_text0}\n\n>> **Index :** {count}'
+            # cc = f'>> **Name :** {name}🚦LPRPDV🚦\n>> **Title :** {raw_text0}\n\n>> **Index :** {count}'
 
 
             if raw_text0 in "vikramjeet" :
@@ -1085,7 +1086,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'    
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}🚦LPRPDV🚦.mp4\n**Caption »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Title »** {name1}.mp4\n**Caption »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
             
             cmd = f'yt-dlp -o "{name}.mp4" --cookies {cook} "{url}"'
             try:
