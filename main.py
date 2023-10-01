@@ -402,7 +402,7 @@ async def account_login(bot: Client, m: Message):
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
                 cc = f"**Name :-** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
-                cc1 = f"**Name :-** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+                cc1 = f"**Name :-** ** {name1} {res}.pdf\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}'
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -924,7 +924,7 @@ async def account_login(bot: Client, m: Message):
             prog = await m.reply_text(Show)
             cc = f'**Title :-** {name1}🚦LPRPDV🚦.mkv\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "pdf" in url:
-                cmd = f'yt-dlp -o "{name}🚦LPRPDV🚦.pdf" "{url1}"'
+                cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
                 cmd = f'yt-dlp -o "{name}.mp4" --no-keep-video --remux-video mkv "{url1}"'
             try:
