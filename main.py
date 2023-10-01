@@ -401,8 +401,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
-                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}"
+                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -434,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                            f"**Name »** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
                         )
                         count += 1
                         # time.sleep(1)
@@ -475,7 +475,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I An Anurag Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
+            "Hello Bruh **I An Aditya Downloader Bot**. I can download videos from **text** file one by one.**\n\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File {Name : Link}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -525,7 +525,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Name »** {name1}🚦LPRPDV🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "youtu" in url:
                 cmd = f'yt-dlp -f best "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -922,9 +922,9 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- Group Admin'
+            cc = f'**Title :-** {name1}🚦LPRPDV🚦.mkv\n**Batch :-** {raw_text0}\n**Index :-** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "pdf" in url:
-                cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
+                cmd = f'yt-dlp -o "{name}🚦LPRPDV🚦.pdf" "{url1}"'
             else:
                 cmd = f'yt-dlp -o "{name}.mp4" --no-keep-video --remux-video mkv "{url1}"'
             try:
@@ -981,7 +981,7 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("🚦Done🚦")
 
 
 @bot.on_message(filters.command(["top"]))
