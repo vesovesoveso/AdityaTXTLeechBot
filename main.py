@@ -108,7 +108,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="https://t.me/LuckyRajputOfficial",
+                url="nothing",
             ),
             InlineKeyboardButton(
                 text="Repo",
@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bro **I am Text Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nDeveloper** : Lucky Rajput*\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
+            "Hello Bro **I am Text Downloader Bot and made by Aditya**. I can download videos from **text** file one by one.**\n\nDeveloper** : Aditya**\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -401,8 +401,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
-                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc = f"**Name »** {name1} {res}🚦LPRPDV🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'"
+                cc1 = f"**Name »** ** {name1} {res}🚦LPRPDV🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -525,7 +525,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "youtu" in url:
                 cmd = f'yt-dlp -f best "{url}" -o "{name}"'
             elif "player.vimeo" in url:
