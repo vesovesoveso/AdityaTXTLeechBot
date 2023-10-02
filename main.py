@@ -205,7 +205,10 @@ async def account_login(bot: Client, m: Message):
         count = 1
     else:
         count = int(raw_text)
-
+    editable = await m.reply_text("**Download by**")
+    input9: Message = await bot.listen(editable.chat.id)
+    raw_text9 = input9.text
+    
     try:
         for i in range(arg, len(links)):
 
