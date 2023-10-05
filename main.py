@@ -404,8 +404,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name »** {name1} {res}🚦Aditya🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {raw_text9}"
-                cc1 = f"**Name »** ** {name1} {res}🚦Aditya🚦.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {raw_text9}"
+                cc = f"**Name :** {name1} {res}Aditya.mkv\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
+                cc1 = f"**Name :** ** {name1} {res}Aditya.pdf\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -437,7 +437,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                            f"**Name »** {name1} {res}Aditya.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
                         )
                         count += 1
                         # time.sleep(1)
@@ -613,7 +613,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}🚦LPRPDV🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Name »** {name1}Aditya.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "vision" or "youtu" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -700,7 +700,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)} {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}. {name1}🚦Aditya🚦.pdf\n'
+            cc = f'{str(count).zfill(3)}. {name1}Aditya.pdf\n'
             try:
                 getstatusoutput(
                     f'curl --http2 -X GET -H "Host:store.adda247.com" -H "user-agent:Mozilla/5.0 (Linux; Android 11; moto g(40) fusion Build/RRI31.Q1-42-51-8; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36" -H "accept:*/*" -H "x-requested-with:com.adda247.app" -H "sec-fetch-site:same-origin" -H "sec-fetch-mode:cors" -H "sec-fetch-dest:empty" -H "referer:https://store.adda247.com/build/pdf.worker.js" -H "accept-encoding:gzip, deflate" -H "accept-language:en-US,en;q=0.9" -H "cookie:cp_token={raw_text5}" "{url}" --output "{name}.pdf"'
@@ -780,7 +780,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}🚦Aditya🚦.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Name »** {name1}Aditya.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "olive" or "youtu" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -925,7 +925,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}🚦Aditya🚦.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Title »** {name1}Aditya.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
@@ -1062,7 +1062,7 @@ async def account_login(bot: Client, m: Message):
 
             # Show = f"**Downloading:-**\n\n**Name :-** ```{name}\nQuality - {raw_text2}```\n\n**Url :-** ```{url}```"
             # prog = await m.reply_text(Show)
-            # cc = f'>> **Name :** {name}🚦Aditya🚦\n>> **Title :** {raw_text0}\n\n>> **Index :** {count}'
+            # cc = f'>> **Name :** {name}Aditya\n>> **Title :** {raw_text0}\n\n>> **Index :** {count}'
 
 
             if raw_text0 in "vikramjeet" :
