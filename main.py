@@ -58,7 +58,7 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [1318247204,6004318404,1511103739,5986734743,5971411129]
+auth_users = [1318247204,6004318404,1511103739,5986734743,5971411129,6488555238]
 sudo_users = auth_users
 sudo_groups = [-4088348095]
 
@@ -404,8 +404,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name :** {name1} {res}Aditya.mkv\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
-                cc1 = f"**Name :** ** {name1} {res}Aditya.pdf\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
+                cc = f"**Name :** {name1} {res}A͜͡d͜͡i͜͡t͜͡y͜͡a͜͡.mkv\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
+                cc1 = f"**Name :** ** {name1} {res}A͜͡d͜͡i͜͡t͜͡y͜͡a͜͡.pdf\n**Batch :** {raw_text0}\n**Index :** {str(count).zfill(3)}\n\n**Downloaded By** :- {raw_text9}"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -437,7 +437,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}Aditya.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                            f"**Name »** {name1} {res}A͜͡d͜͡i͜͡t͜͡y͜͡a͜͡.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
                         )
                         count += 1
                         # time.sleep(1)
@@ -613,7 +613,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}Aditya.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
+            cc = f'**Name »** {name1}A͜͡d͜͡i͜͡t͜͡y͜͡a͜͡.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- {name1}'
             if "vision" or "youtu" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
